@@ -28,7 +28,7 @@
 **TubeLight** is a beautiful, distraction-free web app that turns InsForge into your personal AI thinking companion.  
 Think of it as a **soft tube light glowing over your late-night desk** — focused, warm, and always ready to help you explore ideas.
 
-**[🌐 Live Demo](https://93nrkbcg.insforge.site)** • **[⭐ Star this repo](https://github.com/fahimimtiaz12/TubeLight)**
+**[⭐ Star this repo](https://github.com/fahimimtiaz12/TubeLight)**
 
 </div>
 
