@@ -1,20 +1,3 @@
-**✅ Got it! Here's exactly why you're seeing this:**
-
-The screenshot you shared shows the **raw source** of your `README.md` file (not the rendered version).  
-
-GitHub (and VS Code) is treating the entire file as plain text / code because your `README.md` **accidentally starts with a code fence** (` ```markdown `).  
-
-That fence was part of how I presented the content in my previous message. When you copied it, the fence came along, so GitHub now thinks the whole README is one giant code block. That's why all the `<p align="center">`, `<img>`, `<div>`, and other HTML tags are showing up literally instead of turning into beautiful badges and centered text.
-
----
-
-### 🔥 Quick Fix (30 seconds)
-
-1. Open your `README.md` file  
-2. **Delete everything** currently in it  
-3. Copy the **clean version** below (starts directly with `# 🚀`)  
-4. Paste it in  
-5. Save the file  
 
 ```markdown
 # 🚀 TubeLight — Your Desk Lamp for Ideas ✨
