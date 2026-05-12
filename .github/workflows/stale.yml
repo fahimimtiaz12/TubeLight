@@ -1,0 +1,15 @@
+# Configuration for stale bot
+daysUntilStale: 60          # Days before marking as stale
+daysUntilClose: 7           # Days after stale before closing
+exemptLabels:
+  - pinned
+  - security
+  - "help wanted"
+staleLabel: stale
+markComment: >
+  This issue/PR has been automatically marked as stale because it has not had
+  recent activity. It will be closed if no further activity occurs. Thank you
+  for your contributions.
+closeComment: >
+  This issue/PR was automatically closed because it has been marked as stale
+  for 7 days with no activity.
