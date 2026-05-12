@@ -40,21 +40,33 @@ Think of it as a **soft tube light glowing over your late-night desk** — focus
 |--------------------------------|-------------|
 | 🔐 **Secure Personal History** | Private chats scoped only to you |
 | 🌐 **Multi-Model Switching**   | GPT-4o mini, Claude 3.5 Sonnet, Gemini & more |
-| 📄 **Document RAG**            | Ask questions grounded in your PDFs, Markdown & text |
-| 🖼️ **Private Image Library**   | Upload & reference images (JPEG, PNG, WebP, GIF, SVG) |
-| ⚡ **Fast & Clean UI**          | Built with Vite + Tailwind — beautiful and responsive |
+| 📄 **Document RAG**            | Ask smart questions grounded in your own PDFs, Markdown & text files |
+| ⚡ **Fast & Beautiful UI**     | Modern, clean and responsive design with Tailwind CSS |
 
 Built for **learners, builders, researchers, writers, and solo creators** who want one peaceful place to think deeply with AI.
 
 ---
 
-## 👤 Author & Credits
+## 📸 Screenshots & Demo
+
+<div align="center">
+
+![Login / Sign Up](./screenshots/login-signup.png)  
+![Chat Interface](./screenshots/chat-interface.png)  
+![Document Upload](./screenshots/document-upload.png)  
+![Model Switcher](./screenshots/model-switcher.png)
+
+</div>
+
+---
+
+## 👤 Author & Connect
 
 **Md Fahim Imtiaz Khan**  
 *B.Eng in Software Engineering*
 
-Thank you for checking out TubeLight!  
-If it helps you think clearer or build faster, please ⭐ the repo — it means the world.
+- **Portfolio** → [mdfahimimtiazkhan.dev](https://mdfahimimtiazkhan.dev/)
+- **GitHub** → [@fahimimtiaz12](https://github.com/fahimimtiaz12)
 
 ---
 
@@ -63,56 +75,46 @@ If it helps you think clearer or build faster, please ⭐ the repo — it means 
 ### Prerequisites
 - Node.js **20+** (recommended)
 - npm
-- An InsForge project (free tier is perfect)
+- An InsForge project (free tier works great)
 
-### Step-by-Step
+### Step-by-Step Setup
 
 1. **Link your InsForge project**
    ```bash
    npx @insforge/cli login
    npx @insforge/cli link
 
-Environment variablesBashcp .env.example .envFill in:envVITE_INSFORGE_URL=<your oss_host from .insforge/project.json>
-VITE_INSFORGE_ANON_KEY=<run: npx @insforge/cli secrets get ANON_KEY>
-Run the appBashnpm install
+Set up environment variablesBashcp .env.example .env
+Install & RunBashnpm install
 npm run dev
 Open http://localhost:5173
 
-💡 Tip: Add http://localhost:5173 to Allowed Auth Redirects in your InsForge dashboard.
+💡 Tip: Add http://localhost:5173 to Allowed Auth Redirects in the InsForge dashboard.
 
 🗄️ Database & Storage
+Your app uses 4 main tables automatically created by the migrations:
 
-Migrations in /migrations automatically create:
-Vector search tables (for RAG)
-Chat history
-Row-level security (RLS) scoped to the signed-in user
+tubelight_chats — Stores chat sessions and metadata
+tubelight_messages — Individual messages in each chat
+tubelight_chunks — Document chunks with vector embeddings (powers RAG)
+tubelight_document_sources — Metadata of uploaded documents (PDFs, etc.)
 
-Storage: All documents & images are saved in the private tubelight-docs bucket.
-
-Everything is private by default — only you can access your data.
+Row-level security (RLS) is enabled so every user can only see their own data.
+Storage: All documents and images are stored in the private bucket tubelight-docs.
+Everything is private by default — only the signed-in user can access their data.
 
 🌍 Deploy to Production
-Bash# 1. Build
-npm run build
-
-# 2. Set environment variables
-npx @insforge/cli deployments env set VITE_INSFORGE_URL <your-production-url>
-npx @insforge/cli deployments env set VITE_INSFORGE_ANON_KEY <your-anon-key>
-
-# 3. Deploy
+Bashnpm run build
 npx @insforge/cli deployments deploy .
-vercel.json is included for perfect SPA routing.
 
 🛠️ Tech Stack
 
 Frontend: Vite + React + TypeScript + Tailwind CSS
 Backend: InsForge (Auth • Postgres • Vector Search • Storage • AI Gateway)
-Deployment: Vercel (via InsForge CLI)
 
 
 📜 License
-MIT License — Free to use, modify, and build upon for your own projects.
-See LICENSE for details.
+MIT License — Free to use, modify, and build upon.
 
 🤝 Contributing
 We welcome contributions of all sizes!
@@ -121,11 +123,9 @@ Please read our Contributing Guide first.
 
 TubeLight — crafted with care — 2026 🌟
 Your calm corner of the internet for thinking with AI.
-
-
 Made with ❤️ by Md Fahim Imtiaz Khan
+
 
 Happy building & thinking!
 Any questions? Open an issue or reach out — I’d love to help you customize TubeLight for your workflow.
-
 ⭐ If you like this project, please star the repo! It helps others discover it.
