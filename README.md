@@ -7,7 +7,8 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B67F?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/InsForge-00A3FF?style=flat&logo=supabase&logoColor=white" alt="InsForge Backend">
   <img src="https://img.shields.io/badge/Made%20with%20❤️-FA4B4B" alt="Made with Love">
-  ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/fahimimtiaz12/TubeLight?utm_source=oss&utm_medium=github&utm_campaign=fahimimtiaz12%2FTubeLight&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
+ ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/fahimimtiaz12/TubeLight?utm_source=oss&utm_medium=github&utm_campaign=fahimimtiaz12%2FTubeLight&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 </p>
 
 <p align="center">
