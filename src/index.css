@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-[#070b14] text-slate-100 antialiased;
+  background-image:
+    radial-gradient(ellipse 100% 60% at 50% -15%, rgba(45, 212, 191, 0.14), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 100% 30%, rgba(99, 102, 241, 0.1), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 0% 80%, rgba(56, 189, 248, 0.06), transparent 45%);
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply border border-white/[0.08] bg-slate-900/40 shadow-2xl shadow-black/40 backdrop-blur-xl;
+  }
+
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-teal-200 via-cyan-200 to-indigo-200 bg-clip-text text-transparent;
+  }
+
+  .focus-ring {
+    @apply outline-none ring-2 ring-teal-400/35 ring-offset-2 ring-offset-[#070b14];
+  }
+}
